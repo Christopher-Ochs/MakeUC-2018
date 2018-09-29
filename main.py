@@ -1,3 +1,4 @@
+import pandas as pd
 def load_data(filename="Datasets/train.csv"):
     f = open(filename)
     lines = f.readlines()
@@ -10,6 +11,7 @@ def load_data(filename="Datasets/train.csv"):
 
 
 def main():
+    passanger = pd.read_csv("Datasets/train.csv")
     passengers = load_data()
     print("test")
 
